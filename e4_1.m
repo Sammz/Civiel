@@ -9,7 +9,13 @@ vi  = [sqrt(abs(-2)) sqrt(-2)]
 vii = [factorial(10) factorial(10)/(factorial(2)*factorial(5))]
 
 
-
+% atan(x)   = arctan
+% exp(x)    = e^x
+% log(x)    = ln(x)
+% log10(x)  = 10log(x)
+% sqrt(x)   = wortel(x)
+% abs(x)    = |x|
+% factorial(n) = n!
 
 
 
