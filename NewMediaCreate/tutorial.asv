@@ -1,0 +1,19 @@
+import fouriertrans.m.*
+
+load('ex1.mat');
+
+figure(1), clf(1), hold on
+plot(t, f)
+axis([0,0.09,-1,1])
+hold off
+
+
+[w,F,ww,FF] = fouriertrans(t,f);
+
+figure(2), clf(2), hold on
+plot(w,F)
+hold off
+
+clear max, clear index
+[maxVar, maxi] = max(F);
+freq = w(maxi)
