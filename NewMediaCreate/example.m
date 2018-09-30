@@ -1,13 +1,16 @@
 import fouriertrans.m.*
-load('ex.mat');         %Change with test data
+load('ex3.mat');         %Change with test data (t,f) assumed
+t2 = t;
+f2 = f;
+
 
 figure(1), clf(1)
 subplot(2,2,1)
-plot(t, f)
+plot(t2, f2)
 %axis([0, 2, -1, 1])     % change accordingly to data
 title('t, f')
 
-[w,F,ww,FF] = fouriertrans(t,f);
+[w,F,ww,FF] = fouriertrans(t2,f2);
 subplot(2,2,2)
 plot(w, F)
 %axis([-0.5 ,15, 0, 5])     % change accordingly to data
@@ -29,7 +32,7 @@ frequencies = 2.*pi./(1./xValuesOfPeaks)
 %frequencies = [0, 34, 78];     % Change to find real values
 
 
-[varred,a,b,err,pred] = sinus(t, f, frequencies);
+[varred,a,b,err,pred] = sinus(t2, f2, frequencies);
 subplot(2,2,3)
 plot(pred)
 title('pred')
