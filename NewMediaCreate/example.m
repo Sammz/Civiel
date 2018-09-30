@@ -39,3 +39,6 @@ title('pred')
 subplot(2,2,4)
 plot(err)
 title('err')
+
+aCof = a
+bCof = b
